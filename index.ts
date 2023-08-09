@@ -1,7 +1,6 @@
 import express from 'express';
 import data from './data/data.js';
 import books from './routes/books.js';
-import { log } from 'console';
 const app = express();
 app.use(express.json());
 
