@@ -1,6 +1,6 @@
 import express from 'express';
 import data from './data/data.js';
-import books from './routes/books.js';
+import books from './types/books.js';
 const app = express();
 app.use(express.json());
 
