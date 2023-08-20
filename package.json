@@ -2,7 +2,7 @@
   "name": "bookmanagementapp",
   "version": "1.0.0",
   "description": "this for management books",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build-tsc": "tsc -w",
     "run-watch": "nodemon ",
