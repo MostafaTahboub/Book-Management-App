@@ -9,6 +9,10 @@ const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 app.use(express_1.default.json());
 app.use("/books", book_router_1.default);
+app.get('/get-ip', (req, res) => {
+    const ip = req.socket.remoteAddress;
+    res.json({ ip });
+});
 app.use((req, res) => {
     res.status(404).send("You requested something does not exist :(");
 });

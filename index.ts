@@ -9,6 +9,10 @@ app.use(express.json());
 
 app.use("/books", booksRouter)
 
+app.get('/get-ip', (req, res) => {
+  const ip = req.socket.remoteAddress;
+  res.json({ ip });
+});
 
 app.use((req, res) => {
     res.status(404).send("You requested something does not exist :(");
